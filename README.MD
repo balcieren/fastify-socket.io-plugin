@@ -30,7 +30,7 @@ import Fastify, { FastifyInstance } from "fastify";
 const fastify: FastifyInstance = Fastify();
 ```
 
-Prisma client options are available and you can edit them
+Socket.io options are available and you can edit them and more [socket.io](https://socket.io/)
 
 ```js
 fastify.register(fastifySocketIO, {...});
