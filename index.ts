@@ -2,6 +2,15 @@ import { FastifyPluginCallback } from "fastify";
 import fp from "fastify-plugin";
 import { Server, ServerOptions } from "socket.io";
 
+export {
+  Server,
+  Socket,
+  BroadcastOperator,
+  Namespace,
+  RemoteSocket,
+  ServerOptions,
+} from "socket.io";
+
 export type FastifySocketIoOptions = Partial<ServerOptions>;
 
 const socketPlugin: FastifyPluginCallback<FastifySocketIoOptions> = (
@@ -19,6 +28,7 @@ const socketPlugin: FastifyPluginCallback<FastifySocketIoOptions> = (
       _.io.close();
       done();
     });
+
   next();
 };
 
