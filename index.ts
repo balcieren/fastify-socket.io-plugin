@@ -2,9 +2,9 @@ import { FastifyPluginCallback } from "fastify";
 import fp from "fastify-plugin";
 import { Server, ServerOptions } from "socket.io";
 
-export type SocketIoOptions = Partial<ServerOptions>;
+export type FastifySocketIoOptions = Partial<ServerOptions>;
 
-const socketPlugin: FastifyPluginCallback<SocketIoOptions> = (
+const socketPlugin: FastifyPluginCallback<FastifySocketIoOptions> = (
   fastify,
   options,
   next
