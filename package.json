@@ -1,6 +1,6 @@
 {
   "name": "fastify-socket.io-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Socket.io for Fastify",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
