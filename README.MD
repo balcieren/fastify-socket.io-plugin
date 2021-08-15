@@ -36,6 +36,8 @@ Socket.io options are available and you can edit them and more [socket.io](https
 fastify.register(fastifySocketIO, {...});
 ```
 
+Example
+
 ```js
 fastify.io.on("connect", (socket) => {
   console.log("someone has connected");
