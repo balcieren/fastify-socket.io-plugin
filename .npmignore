@@ -1,2 +1,5 @@
 index.ts
+node_modules
 README.MD
+.nyc_output
+test

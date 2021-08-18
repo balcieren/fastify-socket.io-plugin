@@ -24,8 +24,8 @@ const socketPlugin: FastifyPluginCallback<FastifySocketIoOptions> = (
   fastify
     .decorate("io", require("socket.io")(fastify.server, options))
     .decorateRequest("io", fastify.io)
-    .addHook("onClose", (_, done) => {
-      _.io.close();
+    .addHook("onClose", (fastify, done) => {
+      fastify.io.close();
       done();
     });
 
